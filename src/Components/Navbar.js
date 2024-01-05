@@ -16,7 +16,7 @@ export default function Navbar(props) {
             <a className={`nav-link active text-${(props.mode === "light" ? "dark" : "light")}` }aria-current="page" href="/">My Home</a>
           </li>
           <li className="nav-item">
-            <a className={`nav-link text-${(props.mode === "light" ? "dark" : "light")}`} href="/">{props.aboutText} </a>
+            <a className={`nav-link text-${(props.mode === "light" ? "dark" : "light")}`} href="#about">{props.aboutText} </a>
           </li>
         
         
@@ -28,10 +28,7 @@ export default function Navbar(props) {
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
         </div>
       
-        <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search (not working)" aria-label="Search"/>
-          <button className={`btn btn-outline-warning text-${(props.mode === "light" ? "dark" : "yellow")}`} type="submit">Search</button>
-        </form>
+     
       </div>
     </div>
   </nav>
